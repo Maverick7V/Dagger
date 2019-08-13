@@ -6,12 +6,16 @@ import javax.inject.Inject;
 
 public class Car  {
     public static final String TAG="carTAG";
-    Engine engine;
-    Wheels wheels;
+    @Inject Engine engine;
+    private  Wheels wheels;
 
     @Inject
-    public Car(Engine engine,Wheels wheels){
+    public Car(Wheels wheels){
+    }
 
+    @Inject
+    public void enableRemote(Remote remote){
+        remote.setListener(this);
     }
 
     public void drive(){
