@@ -15,6 +15,6 @@ public class Car  {
     }
 
     public void drive(){
-        Log.d(TAG,"car is driving......");
+        Log.d(TAG,"car is driving......from field");
     }
 }
