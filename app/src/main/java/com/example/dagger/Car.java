@@ -19,6 +19,7 @@ public class Car  {
     }
 
     public void drive(){
+        engine.start();
         Log.d(TAG,"car is driving......from field");
     }
 }

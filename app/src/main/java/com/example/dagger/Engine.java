@@ -2,10 +2,7 @@ package com.example.dagger;
 
 import javax.inject.Inject;
 
-public class Engine {
+public interface Engine {
 
-    @Inject
-    public Engine(){
-
-    }
+    void start();
 }
