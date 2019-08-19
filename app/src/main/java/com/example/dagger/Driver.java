@@ -1,13 +1,10 @@
 package com.example.dagger;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
 
-@Singleton
+
+
 public class Driver {
+    /// we cannot use this class as this is provided from third party
+    // this is an assumption
 
-    @Inject
-    public Driver(){
-
-    }
 }
