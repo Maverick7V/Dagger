@@ -13,11 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ActivityComponent activityComponent=((ExampleApp)getApplication()).getCarComponent()
-                .getActivityComponentBuilder()
-                .horsePower(500)
-                .engineCapacity(1400)
-                .build();
+        ActivityComponent activityComponent=
+                ((ExampleApp)getApplication()).getCarComponent()
+                .getActivityComponentFactory()
+                .create(500,1500);
         activityComponent.inject(this);
         car1.drive();
         car2.drive();
