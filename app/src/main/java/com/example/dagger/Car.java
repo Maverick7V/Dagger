@@ -4,6 +4,8 @@ import android.util.Log;
 
 import javax.inject.Inject;
 
+                                                                                                                                                                        
+@PerActivity
 public class Car  {
     public static final String TAG="carTAG";
     private Engine engine;
